@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1ea;
+  color: #2c2523;
+  padding: 30px 15px;
+}
+
+.contenedor {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.banner-principal {
+  background-color: #2c2523;
+  color: #f4f1ea;
+  border-bottom: 5px solid #d95d39;
+  border-radius: 6px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.banner-principal h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.banner-principal p {
+  color: #b8afa9;
+  font-size: 14px;
+}
+
+.panel {
+  background-color: #ffffff;
+  border: 2px solid #dcd6cc;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.panel-cabecera {
+  padding: 10px 16px;
+  background-color: #e8e2d5;
+  border-bottom: 2px solid #dcd6cc;
+  color: #2c2523;
+}
+
+.panel-cabecera h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panel-cuerpo {
+  padding: 16px;
+}
+
+.fila-campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.campo label,
+.label-busqueda {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  color: #5c5346;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 2px solid #cdc5b4;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #faf8f5;
+  color: #2c2523;
+}
+
+input:focus {
+  outline: none;
+  border-color: #d95d39;
+  background-color: #ffffff;
+}
+
+/* Botones */
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 16px;
+  border: none;
+}
+
+.btn-agregar {
+  background-color: #d95d39;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn-agregar:hover {
+  background-color: #b84a29;
+}
+
+.btn-eliminar {
+  background-color: #f4f1ea;
+  color: #b91c1c;
+  border: 1px solid #dca5a5;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-eliminar:hover {
+  background-color: #b91c1c;
+  color: #ffffff;
+}
+
+.oculto {
+  display: none;
+}
+
+.mensaje-exito {
+  display: block;
+  background-color: #def7ec;
+  color: #03543f;
+  border: 2px solid #31c48d;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  display: block;
+  background-color: #fde8e8;
+  color: #9b1c1c;
+  border: 2px solid #f98080;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.seccion-catalogo {
+  margin-top: 10px;
+}
+
+.catalogo-titulo {
+  margin-bottom: 12px;
+  border-bottom: 2px solid #dcd6cc;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalogo-titulo h2 {
+  font-size: 18px;
+  color: #2c2523;
+}
+
+.grilla-tarjetas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.tarjeta-vinilo {
+  background-color: #ffffff;
+  border: 2px solid #dcd6cc;
+  border-top: 5px solid #2c2523;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.tarjeta-top {
+  border-bottom: 1px solid #eeeadd;
+  padding-bottom: 10px;
+}
+
+.tarjeta-vinilo h3 {
+  font-size: 17px;
+  color: #2c2523;
+  margin-bottom: 6px;
+}
+
+.etiqueta-artista {
+  display: inline-block;
+  background-color: #e8e2d5;
+  color: #4a4238;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.tarjeta-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.etiqueta-precio {
+  color: #2e6f40;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.tarjeta-vacia {
+  grid-column: 1 / -1;
+  background-color: #ffffff;
+  color: #7a7067;
+  border: 2px dashed #cdc5b4;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+  font-weight: bold;
+}

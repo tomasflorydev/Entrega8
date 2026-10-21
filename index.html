@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrega 8</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <main class="contenedor">
+    <header class="banner-principal">
+      <h1 id="titulo-principal">Catálogo de Vinilos</h1>
+    </header>
+
+    <section class="panel">
+      <div class="panel-cabecera">
+        <h2>Cargar Nuevo Disco</h2>
+      </div>
+      <form id="form-vinilo" class="panel-cuerpo">
+        <div class="fila-campos">
+          <div class="campo">
+            <label for="input-titulo">Título del disco</label>
+            <input type="text" id="input-titulo" placeholder="Ej: Random Access Memories" required>
+          </div>
+
+          <div class="campo">
+            <label for="input-artista">Artista / Banda</label>
+            <input type="text" id="input-artista" placeholder="Ej: Daft Punk" required>
+          </div>
+
+          <div class="campo">
+            <label for="input-precio">Precio ($)</label>
+            <input type="number" id="input-precio" placeholder="Ej: 65000" min="1" required>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-agregar" class="btn-agregar">+ Agregar a la Colección</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="panel-cabecera">
+        <h2>Buscador</h2>
+      </div>
+      <div class="panel-cuerpo">
+        <label for="input-busqueda" class="label-busqueda">Escribe para filtrar por título o artista (Presiona ESC para limpiar):</label>
+        <input type="text" id="input-busqueda" placeholder="Buscar vinilo...">
+      </div>
+    </section>
+
+    <div id="feedback" class="oculto"></div>
+
+    <section class="seccion-catalogo">
+      <div class="catalogo-titulo">
+        <h2>Vinilos Disponibles</h2>
+        <button type="button" id="btn-vaciar" class="btn-eliminar">Vaciar Catálogo</button>
+      </div>
+      <ul id="contenedor-items" class="grilla-tarjetas"></ul>
+    </section>
+  </main>
+
+</body>
+</html>
